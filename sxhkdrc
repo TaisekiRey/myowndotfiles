@@ -1,0 +1,47 @@
+# terminal
+super + Return
+	alacritty
+
+# rofi
+super + d
+	rofi -show drun
+
+# firefox
+super + f
+	firefox
+
+# telegram
+super + t
+	telegram-desktop
+
+# steam
+super + s
+	steam
+
+# bottles
+super + b
+	flatpak run com.usebottles.bottles
+
+# close
+super + shift + q
+	bspc node -c
+
+# moving focus around the windows
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+# change position of windows
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east} 
+
+# fullscreen
+super + shift + f
+	bspc node -t fullscreen
+
+# screenshot
+Print
+	flameshot gui
+
+# restart bspwm
+super + F5
+	bspc wm -r
